@@ -18,20 +18,31 @@ const { records, tags } = data;
 export default class ResourcesList extends Component {
   render() {
     return (
-      <ListGroup>
-        {records.map(record => {
-          return (
-            <ListGroupItem
-              key={record.id}
-              header={record.fields.Name}
-              onClick={() =>
-                this.props.history.push(`/resources/${record.fields.slug}`)}
-            >
-              {record.fields.tags.join(", ")}
-            </ListGroupItem>
-          );
-        })}
-      </ListGroup>
+      <div>
+        <p>What do you need?</p>
+        {tags.map(tag => <Label key={tag}>{tag}</Label>)}
+        <br />
+        <br />
+        <ListGroup>
+          {records.map(record => {
+            return (
+              <Link
+                to={`/resources/${record.fields.slug}`}
+                className="list-group-item"
+                key={record.id}
+              >
+                <h4 className="list-group-item-heading">
+                  {record.fields.Name}
+                </h4>
+                {record.fields.tags.join(", ")}
+              </Link>
+            );
+          })}
+        </ListGroup>
+      </div>
     );
   }
 }
+
+// onClick={() =>
+// this.props.history.push()}

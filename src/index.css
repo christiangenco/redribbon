@@ -1,0 +1,5 @@
+.label{
+  display: inline-block !important;
+  margin-right: 5px;
+  cursor: pointer;
+}
