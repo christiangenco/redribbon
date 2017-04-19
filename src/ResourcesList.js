@@ -1,14 +1,5 @@
 import React, { Component } from "react";
-import {
-  Button,
-  ListGroup,
-  ListGroupItem,
-  Grid,
-  Row,
-  Col,
-  PageHeader,
-  Label
-} from "react-bootstrap";
+import { Label, ListGroup } from "react-bootstrap";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -17,14 +8,44 @@ const { records, tags } = data;
 
 export default class ResourcesList extends Component {
   render() {
+    const { serviceList } = this.props.match.params;
+    const services = new Set([
+      ...(serviceList || "")
+        .split(",")
+        .map(service => decodeURIComponent(service))
+    ]);
+    services.delete(""); // lazy solution
+
+    const filteredRecords = services.size === 0
+      ? records
+      : records.filter(record =>
+          (record.fields.tags || [])
+            .reduce((tf, tag) => tf || services.has(tag), false));
+
     return (
       <div>
         <p>What do you need?</p>
-        {tags.map(tag => <Label key={tag}>{tag}</Label>)}
+        <div id="tagList">
+          {tags.map(tag => (
+            <Label
+              key={tag}
+              bsStyle={services.has(tag) ? "primary" : "default"}
+              onClick={() => {
+                services.has(tag) ? services.delete(tag) : services.add(tag);
+                const serializedServices = [...services]
+                  .map(service => encodeURIComponent(service))
+                  .join(",");
+                this.props.history.push(`/services/${serializedServices}`);
+              }}
+            >
+              {tag}
+            </Label>
+          ))}
+        </div>
         <br />
         <br />
         <ListGroup>
-          {records.map(record => {
+          {filteredRecords.map(record => {
             return (
               <Link
                 to={`/resources/${record.fields.slug}`}
@@ -34,7 +55,16 @@ export default class ResourcesList extends Component {
                 <h4 className="list-group-item-heading">
                   {record.fields.Name}
                 </h4>
-                {record.fields.tags.join(", ")}
+                {record.fields.tags
+                  .map(
+                    tag => services.has(tag) ? <b>{tag}</b> : <span>{tag}</span>
+                  )
+                  .reduce(
+                    (accu, elem) => {
+                      return accu === null ? [elem] : [...accu, ", ", elem];
+                    },
+                    null
+                  )}
               </Link>
             );
           })}

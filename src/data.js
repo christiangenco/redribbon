@@ -2562,6 +2562,6 @@ data.tags = [
       .map(record => record.fields.tags)
       .reduce((a, b) => a.concat(b), [])
   )
-];
+].sort();
 
 export default data;

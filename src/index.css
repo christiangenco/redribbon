@@ -1,5 +1,33 @@
-.label{
-  display: inline-block !important;
-  margin-right: 5px;
+#tagList .label{
+  /*display: inline-block !important;*/
+  display: block;
+  /*margin-right: 5px;*/
+  margin-bottom: 5px;
   cursor: pointer;
+  font-size: 12pt;
+}
+
+#tagList{
+  columns: 1
+}
+
+@media(max-width:767px){
+  #tagList{
+    columns: 1
+  }
+}
+@media(min-width:768px){
+  #tagList{
+    columns: 2
+  }
+}
+@media(min-width:992px){
+  #tagList{
+    columns: 3
+  }
+}
+@media(min-width:1200px){
+  #tagList{
+    columns: 4
+  }
 }

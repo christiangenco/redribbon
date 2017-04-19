@@ -27,10 +27,12 @@ class App extends Component {
               <PageHeader>
                 <Link to="/">Red Ribbon</Link>
                 {" "}
-                <small>resources for people in Dallas with HIV and AIDS</small>
+                <small>resources for people in Dallas with HIV/AIDS</small>
               </PageHeader>
 
               <Route exact path="/" component={ResourcesList} />
+              <Route exact path="/services/" component={ResourcesList} />
+              <Route path="/services/:serviceList" component={ResourcesList} />
               <Route path="/resources/:slug" component={Resource} />
             </Col>
           </Row>
