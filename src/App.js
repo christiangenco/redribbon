@@ -1,19 +1,41 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+
+import {
+  Button,
+  ListGroup,
+  ListGroupItem,
+  Grid,
+  Row,
+  Col,
+  PageHeader,
+  Label
+} from "react-bootstrap";
+
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import ResourcesList from "./ResourcesList";
+import Resource from "./Resource";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <Grid>
+          <Row>
+            <Col xs={12}>
+              <PageHeader>
+                <Link to="/">Red Ribbon</Link>
+                {" "}
+                <small>resources for people in Dallas with HIV and AIDS</small>
+              </PageHeader>
+
+              <Route exact path="/" component={ResourcesList} />
+              <Route path="/resources/:slug" component={Resource} />
+            </Col>
+          </Row>
+        </Grid>
+      </Router>
     );
   }
 }
