@@ -15,14 +15,6 @@ data.records = data.records.map(record => {
   return record;
 });
 
-data.categories = [
-  ...new Set(
-    data.records
-      .map(record => record.fields.categories)
-      .reduce((a, b) => a.concat(b), [])
-  )
-].sort();
-
 data.tags = [
   ...new Set(
     data.records
@@ -30,5 +22,19 @@ data.tags = [
       .reduce((a, b) => a.concat(b), [])
   )
 ].sort();
+
+// const categoryKeys = [
+//   ...new Set(
+//     data.records
+//       .map(record => record.fields.categories)
+//       .reduce((a, b) => a.concat(b), [])
+//   )
+// ].sort();
+data.categories = {};
+data.tags.map(tag => {
+  const category = tag.split("/")[0];
+  data.categories[category] || (data.categories[category] = []);
+  data.categories[category].push(tag);
+});
 
 export default data;

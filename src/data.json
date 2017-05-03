@@ -369,7 +369,7 @@
         "Web Site": "www.aindallas.org",
         "Hours of Operation": "Mon-Fri 8:30am – 5pm; individual program hours vary",
         "BIO": "AIN provides programs for persons already diagnosed with HIV/AIDS at no cost to eligible clients, as well as HIV prevention and health education in both English and Spanish. Client service programs include transportation (bus passes and van rides); nutrition through prepared meals (breakfast and lunch); adult day center (Daire Center); linguistic services (Spanish language interpretation and/ or translation for clients and other HIV/AIDS service organizations); and client advocacy. HIV Prevention includes outreach; HIV/AIDS education; HIV testing; health education and linkage to care and targeted initiatives especially for Spanish speaking population in Dallas and surrounding counties. Also provides volunteer opportunities and faith-based services.",
-        "Faith Based": true,
+        "?/Faith Based": true,
         "Contact": "Edgar Carmona",
         "?/Linguistic Services": true
       },
@@ -397,7 +397,7 @@
         "Web Site": "www.aindallas.org",
         "Hours of Operation": "Mon-Fri 8:30am – 5pm; with some weekend schedules",
         "BIO": "Manos Unidas is an initiative of AIDS Interfaith Network, Inc. which specifically services the Hispanic community. This program provides outreach; advocacy; Spanish language assistance; HIV prevention education; HIV testing; health education; linkage to health care and/or support services; casework in Dallas and through mobile capacity in surrounding counties. Targets at-risk individuals and also reaches HIV positive individuals with services to help HIV+ Hispanics who need to access care, reduce HIV infection and/or address other health issues, help stop the spread of HIV in the Spanish-speaking population, and improve the health of Hispanics living in the US.",
-        "Faith Based": true,
+        "?/Faith Based": true,
         "Contact": "Edgar Carmona"
       },
       "createdTime": "2017-03-07T16:17:51.000Z"
@@ -593,7 +593,7 @@
         "?/Childrens Services": true,
         "?/Client Advocacy": true,
         "Medical/Clinical Trials": true,
-        "Clothing/": true,
+        "?/Clothing": true,
         "Counseling/Group": true,
         "Counseling/Nutritional": true,
         "Counseling/Psychosocial": true,
@@ -809,7 +809,7 @@
         "Zip": "75207-2710",
         "Phone": "214-670-7200",
         "Counseling/Nutritional": true,
-        "Food/Supplemental (SNAP/WIC)": true,
+        "Food/Supplemental (SNAP and WIC)": true,
         "Web Site": "www.dallascityhall.com/ehs/wic_program.html",
         "Hours of Operation": "Mon-Fri, 7:30am – 5:30pm Sat 7:30am – 3:30pm",
         "BIO": "WIC is a health and nutrition education program with a successful record of improving the diets of infants, children, and pregnant, postpartum and breastfeeding women who are at risk for nutrition-related illness. The main focus of WIC is educating mothers about proper nutrition through pregnancy and feeding their babies and young children. WIC provides supplemental foods (milk, cheese, whole grain products, fruits, vegetables, juice, eggs, baby food and formula) for women, infants, and children up to age 5. WIC promotes and supports breastfeeding through their peer counselor and lactation consultant programs. WIC also provides referrals to other health care resources",
@@ -1313,7 +1313,7 @@
         "Housing/Emergency Shelters": true,
         "Education/Financial Education": true,
         "Food/Hot Meals": true,
-        "Food/Supplemental (SNAP/WIC)": true,
+        "Food/Supplemental (SNAP and WIC)": true,
         "Housing/Homeless Shelters": true,
         "Housing/Housing Assistance": true,
         "Housing/Transitional": true,
@@ -1326,7 +1326,7 @@
         "Web Site": "www.dallaslife.org",
         "Hours of Operation": "Mon-Fri, 8am – 4:30pm; Check In: 4pm – 8:30pm",
         "BIO": "Dallas LIFE is a charitable nonprofit corporation established to meet the needs of the poor and homeless of the Dallas Metroplex. Provides food, shelter, clothing and counseling to all persons in need regardless of race, color, creed, sex or age Provides the opportunity for physical rehabilitation and spiritual regeneration with the goal of returning the persons assisted to productive roles in society. The motivation for its ministry is the love of God and the teaching and example of Jesus Christ.",
-        "Faith Based": true,
+        "?/Faith Based": true,
         "Contact": "John Koesema, Director of Operations"
       },
       "createdTime": "2017-03-09T18:36:55.000Z"
@@ -1368,7 +1368,7 @@
         "Housing/Emergency Shelters": true,
         "?/Family Violence and Domestic Abuse Services": true,
         "Food/Pantry": true,
-        "Food/Supplemental (SNAP/WIC)": true,
+        "Food/Supplemental (SNAP and WIC)": true,
         "?/General and Thrift Store": true,
         "?/Literacy Services": true,
         "?/Outreach Services": true,
@@ -1438,7 +1438,7 @@
         "Medical/Clinical Trials": true,
         "Hours of Operation": "Mon-Sat, 11am – 5pm",
         "BIO": "Disciples of the Holy Trinity operates DOT’s Closet, a clothing and furniture resale store. Within the retail store is a client section solely for DOT’s clients to shop. A picture ID & Resource Center Dallas ID card is required each time the client shops. First time users also need a letter of diagnosis reflecting recent CD4 count and a referral from a case manager faxed to 214-826-4408. Three days after this information is received, you may call for an appointment to shop. Client shopping is by appointment only. Client shopping is not available during the month of January. Client shopping appointments are Thursday – Friday, 11am – 12pm, 2pm – 3pm as available. No-shows do not get a second appointment for that month. Two no-shows are no longer listed as a client, and do not get another opportunity to become a client.",
-        "Faith Based": true
+        "?/Faith Based": true
       },
       "createdTime": "2017-03-09T18:51:24.000Z"
     },
@@ -1666,7 +1666,7 @@
         "Medical/Drug & Alcohol Treatment - Inpatient": true,
         "Medical/Drug & Aclohol Treatment - Outpatient": true,
         "Food/Hot Meals": true,
-        "Food/Supplemental (SNAP/WIC)": true,
+        "Food/Supplemental (SNAP and WIC)": true,
         "?/HIV Prevention Education": true,
         "Housing/Transitional": true,
         "Work/Job Assistance": true,
@@ -1997,7 +1997,7 @@
         "?/Family Planning": true,
         "?/Family Violence and Domestic Abuse Services": true,
         "?/Financial Assistance": true,
-        "Food/Supplemental (SNAP/WIC)": true,
+        "Food/Supplemental (SNAP and WIC)": true,
         "Medical/Health Insurance Assistance": true,
         "?/HIV Prevention Education": true,
         "?/HIV and STD Testing Sites": true,
@@ -2145,7 +2145,7 @@
         "Medical/Vision Services": true,
         "Web Site": "www.ndsm.org",
         "BIO": "A cooperative effort of 52 congregations that combine resources to ef ciently de- liver effective and appropriate assistance to Dallas’ poorest individuals and fam- ilies. NDSM provides a wide-ranging array of assistance and our programs and services can be grouped into  ve broad categories: emergency assistance, help in accessing health and community programs, wellness programs,  nancial indepen- dence programs, guide to emergency assistance. Everyone seeking assistance must apply in person. We serve clients and patients on a  rst-come,  rst-served basis. All clients must provide a photo ID and proof of address. For many ser- vices, clients and patients must also provide additional information such as proof of where they live and/or veri cation of income. Visit website at www.NDSM.org for descriptions of each program and speci c eligibility and application requirements. Many programs have speci c eligibility requirements and some services are re- stricted to persons living in speci c ZIP codes. Emergency assistance: food pantry,  nancial aid, clothing, senior food program, school uniforms and supplies, rent/ utility advances, furniture, birth certi cates and IDs, transportation. Wellness pro- grams: eye exam and eyeglass program, medical clinics. Financial independence programs: job counseling, English-as-a second language classes, tax preparation assistance program.",
-        "Faith Based": true
+        "?/Faith Based": true
       },
       "createdTime": "2017-03-09T16:29:45.000Z"
     },
@@ -2460,7 +2460,7 @@
         "?/Childrens Services": true,
         "?/Client Advocacy": true,
         "Medical/Clinical Trials": true,
-        "Food/Supplemental (SNAP/WIC)": true,
+        "Food/Supplemental (SNAP and WIC)": true,
         "?/Medicaid": true,
         "Web Site": "http://www.yourtexasbene ts.com",
         "BIO": "Food Stamps (SNAP)The SNAP (Supplemental Nutrition Assistance Program) food bene ts program (for- merly called food stamps) helps people with low incomes and resources (assets) buy the food they need for good health. Individuals or families who meet the program’s requirements may qualify for SNAP.MedicaidMedicaid is the state and federal cooperative program that provides medical coverage to eligible needy persons. Medicaid primarily serves low- income families, non-disabled children, related caretakers of dependent children, pregnant women, the elderly, and people with disabilities.Offices in Dallas CountyAll of ces open Mon-Fri unless stated differently below.RW ESP61\n62Address: 5455 Blair Rd., Dallas, TX 75231Phone: 214-750-4619; TDD: 214-750-0527; Fax: 214-891-0513Hours: 8am – 5pmZip Code Coverage: 75205, 75209, 75214, 75225, 75230, 75231, 75240, 75251, 75254, 75359, 75367, 75372, 75380, 75382Address: 1010 Cadiz, Ste. 110, Dallas, TX 75215Phone: 214-421-7722; TDD: 214-565-6957; Fax: 214-565-6958Hours: 7:30am – 5pmZip Code Coverage: 75207, 75212, 75215, 75277, 75315, 75334, 75340, 75371Address: 1467 Acton Ave., Duncanville, TX 75137-3338Phone: 972-709-8075; TDD: 972-708-6102; Fax: 972-708-6209Hours: 8am – 5pmZip Code Coverage: 75104, 75106, 75115, 75116, 75123, 75137, 75138, 75154*, 75237, 75249*Address: 1228-A E. Ledbetter Dr., Dallas, TX 75216-6988Phone: 214-372-4671; TDD: 214-302-3983; Fax: 214-302-5180Hours: 8am – 5pmZip Code Coverage: 75134, 75136, 75141, 75146, 75172, 75216, 75232, 75239, 75241, 75339Address: 12100 Ford Rd., Ste. B400, Dallas, TX 75220Phone: 214-351-6231; TDD: 214-353-7845; Fax: 214-350-0374Hours: 8am – 5pmZip Code Coverage: 75001, 75006*, 75007*, 75008, 75011, 75220, 75229, 75234, 75235, 75244, 75245, 75247, 75248, 75252, 75257, 75258, 75275, 75287*, 75354, 75356, 75370, 75379, 75381Address: 3910 Gaston Ave., Ste. 200, Dallas, TX 75246Phone: 214-827-5210; TDD: 214-818-4821; Fax: 214-818-4898Hours: 7:30am – 5pmZip Code Coverage: 75201, 75202, 75204, 75206, 75210, 75219, 75221, 75223, 75226, 75242, 75246, 75250, 75270, 75313, 75360Address: 801 S. State Highway 161, Ste. 300, Grand Prairie, TX 75051 Phone: 972-795-6500; TDD: 972-642-6755; Fax: 972-642-0462Hours: 8am – 5pmZip Code Coverage: 75050, 75051, 75052, 75053, 75054Address: 440 South Nursery Rd., Ste. 200, Irving, TX 75060Phone: 972-579-3080; TDD: 972-785-6387; Fax: 972-785-6385Hours: 8am – 5pmZip Code Coverage: 75014, 75015, 75016, 75017, 75019, 75037, 75038, 75039, 75060, 75061, 75062, 75063Address: 6500 Northwest Dr., Ste. 300, Mesquite, TX 75150Phone: 972-681-9778; TDD: 972-682-3282; Fax: 972-681-1862Hours: 8am – 5pmZip Code Coverage: 75030, 75040, 75041, 75043, 75049, 75088, 75149, 75150, 75182, 75185, 75187, 75218, 75358, 75393Address: 2020 N. Masters, Dallas, TX 75217-3147Phone: 972-216-0087; TDD: 972-882-8288; Fax: 972-882-8333 Hours: 8am – 5pm\nZip Code Coverage: 75180, 75181, 75217, 75227, 75228, 75303, 75253, 75336, 75357Address: 1059 S. Sherman St., Richardson, TX 75081Phone: 972-480-5000; TDD: 972-699-2497; Fax: 972-699-2495Hours: 8am – 5pmZip Code Coverage: 75042, 75044, 75045, 75046, 75047, 75048, 75080*, 75081, 75082, 75083, 75085, 75089*, 75098*, 75238, 75243, 75355, 75374, 75389Address: 1111 W. Ledbetter Dr., Ste. 400, Dallas, TX 75224Phone: 214-372-6370; TDD: 214-302-4315; Fax: 214-302-4275Hours: 8am – 5pmZip Code Coverage: 75203, 75208, 75211, 75222, 75224, 75233, 75236, 75260, 75262, 75263, 75264, 75265, 75266, 75267, 75283, 75284, 75285, 75312, 75323, 75343, 75363, 75376, 75387"
@@ -2532,7 +2532,7 @@
         "?/Financial Assistance": true,
         "Education/Financial Education": true,
         "Food/Hot Meals": true,
-        "Food/Supplemental (SNAP/WIC)": true,
+        "Food/Supplemental (SNAP and WIC)": true,
         "?/HIV and STD Testing Sites": true,
         "Housing/Homeless Shelters": true,
         "Housing/Housing Assistance": true,
@@ -2543,7 +2543,7 @@
         "Web Site": "www.TheStewpot.org",
         "Hours of Operation": "Mon, Wed-Fri, 8am – 3:45pm; Tue, 8am – 2:45pm *Closed from noon - 1pm*",
         "BIO": "The Stewpot (of First Presbyterian Church) provides day shelter, casework assistance, Texas ID assistance, Rep Payee services, mailboxes,  rst aid, dental clinic, medical clinic, referral services, art class and pastoral counseling to the homeless of Dallas on a no-strings-attached basis. Provides children and youth programs year round",
-        "Faith Based": true,
+        "?/Faith Based": true,
         "Medical/Psychiatric Medication Management": true
       },
       "createdTime": "2017-03-09T15:58:00.000Z"
@@ -2751,5 +2751,5 @@
       "createdTime": "2017-03-08T21:08:06.000Z"
     }
   ],
-  "offset": "itrsdCRDvoUhBGnTp/recgOU7ZsKvF1zasi"
+  "offset": "itrU94KzkmZecReUm/recgOU7ZsKvF1zasi"
 }
