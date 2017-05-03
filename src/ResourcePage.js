@@ -1,9 +1,22 @@
 import React, { Component } from "react";
-import { Button, Table } from "react-bootstrap";
+import data from "./data.js";
+const { records, tags } = data;
+import {
+  Button,
+  ListGroup,
+  ListGroupItem,
+  Grid,
+  Row,
+  Col,
+  PageHeader,
+  Table
+} from "react-bootstrap";
 
 export default class Resource extends Component {
   render() {
-    const { resource } = this.props;
+    const { slug } = this.props.match.params;
+    const resource = records.find(r => r.fields.slug === slug);
+
     if (!resource) return <p>resource not found</p>;
 
     const fields = resource.fields;
@@ -23,7 +36,7 @@ export default class Resource extends Component {
 
     return (
       <div>
-        {/*<h2>{fields.Name}</h2> */}
+        <h2>{fields.Name}</h2>
         <p>{fields.BIO}</p>
         <Table striped bordered condensed hover>
           <tbody>
@@ -44,7 +57,7 @@ export default class Resource extends Component {
               if (!fields[key]) return null;
               return <tr key={key}><th>{key}</th><td>{fields[key]}</td></tr>;
             })}
-            <tr style={{ display: "none" }}>
+            <tr>
               <th>Services</th>
               <td>{fields.tags.join(", ")}</td>
             </tr>

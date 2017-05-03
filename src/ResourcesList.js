@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import { Label, ListGroup, Tabs, Tab } from "react-bootstrap";
+import { Label, ListGroup, Tabs, Tab, ListGroupItem } from "react-bootstrap";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import data from "./data.js";
 const { records, tags, categories } = data;
 
+import Resource from "./Resource.js";
+
 // this.props.history.push(`/services/${serializedServices}`);
 
 export default class ResourcesList extends Component {
-  state = {};
+  state = { expanded: {} };
 
   renderServiceList(category, subcategory) {
     let filteredRecords;
@@ -31,35 +33,31 @@ export default class ResourcesList extends Component {
     } else {
       filteredRecords = [];
     }
-
-    // return JSON.stringify({ category, subcategory });
-    // return "hello world";
-
-    // if (category && category !== "all") {
-    //   filteredRecords = records.filter(
-    //     record => (record.fields.categories || []).indexOf(category) !== -1
-    //   );
-    // }
-    // const filteredRecords = services.size === 0
-    //   ? records
-    //   : records.filter(record =>
-    // (record.fields.tags || [])
-    //   .reduce((tf, tag) => tf || services.has(tag), false));
-
+    // <Link
+    //   to={`/resources/${record.fields.slug}`}
+    //   className="list-group-item"
+    //   key={record.id}
+    // >
     return (
-      <ListGroup>
+      <ListGroup style={{ marginTop: 10 }}>
         {filteredRecords.map(record => {
           return (
-            <Link
-              to={`/resources/${record.fields.slug}`}
-              className="list-group-item"
+            <ListGroupItem
               key={record.id}
+              onClick={() => {
+                const state = {};
+                const key = `${record.id}_expanded`;
+                state[key] = !!!this.state[key];
+                this.setState(state);
+                console.log(this.state);
+              }}
             >
               <h4 className="list-group-item-heading">
                 {record.fields.Name}
               </h4>
-              {JSON.stringify(record.fields.categories)}
-            </Link>
+              {this.state[`${record.id}_expanded`] &&
+                <Resource resource={record} />}
+            </ListGroupItem>
           );
         })}
       </ListGroup>
