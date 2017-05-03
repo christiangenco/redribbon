@@ -35,43 +35,35 @@ export default class Resource extends Component {
     ];
 
     return (
-      <Grid>
-        <Row>
-          <Col xs={12}>
-            <p>
-              <h2>{fields.Name}</h2>
-              <p>{fields.BIO}</p>
-              <Table striped bordered condensed hover>
-                <tbody>
-                  <tr>
-                    <th>Address</th>
-                    <td>
-                      <a
-                        href={
-                          `http://maps.google.com/?q=${encodeURIComponent(address)}`
-                        }
-                        target="_blank"
-                      >
-                        {address}
-                      </a>
-                    </td>
-                  </tr>
-                  {attributes.map(key => {
-                    if (!fields[key]) return null;
-                    return (
-                      <tr key={key}><th>{key}</th><td>{fields[key]}</td></tr>
-                    );
-                  })}
-                  <tr>
-                    <th>Services</th>
-                    <td>{fields.tags.join(", ")}</td>
-                  </tr>
-                </tbody>
-              </Table>
-            </p>
-          </Col>
-        </Row>
-      </Grid>
+      <div>
+        <h2>{fields.Name}</h2>
+        <p>{fields.BIO}</p>
+        <Table striped bordered condensed hover>
+          <tbody>
+            <tr>
+              <th>Address</th>
+              <td>
+                <a
+                  href={
+                    `http://maps.google.com/?q=${encodeURIComponent(address)}`
+                  }
+                  target="_blank"
+                >
+                  {address}
+                </a>
+              </td>
+            </tr>
+            {attributes.map(key => {
+              if (!fields[key]) return null;
+              return <tr key={key}><th>{key}</th><td>{fields[key]}</td></tr>;
+            })}
+            <tr>
+              <th>Services</th>
+              <td>{fields.tags.join(", ")}</td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
     );
   }
 }

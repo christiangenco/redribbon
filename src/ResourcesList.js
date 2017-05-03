@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import { Label, ListGroup } from "react-bootstrap";
+import { Label, ListGroup, Tabs, Tab } from "react-bootstrap";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import data from "./data.js";
-const { records, tags } = data;
+const { records, tags, categories } = data;
 
 export default class ResourcesList extends Component {
+  state = {};
   render() {
     const { serviceList } = this.props.match.params;
     const services = new Set([
@@ -24,6 +25,16 @@ export default class ResourcesList extends Component {
 
     return (
       <div>
+        {JSON.stringify()}
+        <Tabs
+          activeKey={this.state.key}
+          onSelect={this.handleSelect}
+          id="controlled-tab-example"
+        >
+          {categories.map(category => (
+            <Tab eventKey={category} title={category}>Tab for {category}</Tab>
+          ))}
+        </Tabs>
         <p>What do you need?</p>
         <div id="tagList">
           {tags.map(tag => (
@@ -55,6 +66,7 @@ export default class ResourcesList extends Component {
                 <h4 className="list-group-item-heading">
                   {record.fields.Name}
                 </h4>
+                {JSON.stringify(record.fields.categories)}
                 {record.fields.tags
                   .map(
                     tag => services.has(tag) ? <b>{tag}</b> : <span>{tag}</span>
