@@ -65,10 +65,7 @@ export default class Resource extends Component {
                 );
               }
 
-              if (
-                key.toLowerCase() === "phone" ||
-                key.toLowerCase() === "fax"
-              ) {
+              if (key.toLowerCase() === "phone") {
                 value = (
                   <a href={"tel:" + fields[key]}>
                     {fields[key]}
