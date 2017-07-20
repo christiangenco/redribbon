@@ -32,6 +32,14 @@
       "createdTime": "2017-03-06T22:22:16.000Z"
     },
     {
+      "id": "recr2gJbc12ZEKqdp",
+      "fields": {
+        "Name": "A sister's Gift Women' Center",
+        "State": "TX"
+      },
+      "createdTime": "2017-07-19T18:33:37.000Z"
+    },
+    {
       "id": "recVwwiN9R2EkiVYO",
       "fields": {
         "Name": "Abounding Prosperity, Inc",
@@ -2726,30 +2734,7 @@
         "Education/Pre-Exposure HIB Prophylaxis PrEp Therapy": true
       },
       "createdTime": "2017-03-08T21:10:53.000Z"
-    },
-    {
-      "id": "recgOU7ZsKvF1zasi",
-      "fields": {
-        "Name": "Visiting Nurses Association",
-        "Address": "1600 Viceroy Dr.",
-        "Suite": "Ste. 400",
-        "City": [
-          "Dallas"
-        ],
-        "State": "TX",
-        "Zip": "75235",
-        "Phone": "214-689-0000",
-        "Fax": "214-689-2300",
-        "email": "gethelp@vnatexas.org",
-        "Medical/Hospice Care Services": true,
-        "Toll Free": "800-CALL-VNA",
-        "Web Site": "www.vnatexas.org",
-        "Hours of Operation": "Mon-Fri, 8am – 5pm; 24-hour on call",
-        "BIO": "VNA is the community’s most trusted provider of quality healthcare services in the home and is the oldest, most experienced Hospice Care provider in Texas. Estab- lished in 1934, VNA is a nonpro t organization that helps our elderly neighbors and loved ones maintain their independence by providing the services that allow them to age where they are happiest and most comfortable – at home. Caring, listening and responding to our patients’ quality of life and comfort issues is what we have done for more than 80 years. VNA offers Meals on Wheels in Dallas County, and VNA Hospice and Private Care in Collin, Cooke, Dallas, Denton, Ellis, Grayson, Henderson, Hunt, Kaufman, Navarro, Rockwall, Tarrant and Van Zandt counties.",
-        "TTY": "214-689-0000"
-      },
-      "createdTime": "2017-03-08T21:08:06.000Z"
     }
   ],
-  "offset": "itrU94KzkmZecReUm/recgOU7ZsKvF1zasi"
+  "offset": "itr2BVy0phUujkLae/recxW1O1jg0voH9Mp"
 }

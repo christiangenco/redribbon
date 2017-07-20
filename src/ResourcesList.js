@@ -42,17 +42,18 @@ export default class ResourcesList extends Component {
       <ListGroup style={{ marginTop: 10 }}>
         {filteredRecords.map(record => {
           return (
-            <ListGroupItem
-              key={record.id}
-              onClick={() => {
-                const state = {};
-                const key = `${record.id}_expanded`;
-                state[key] = !!!this.state[key];
-                this.setState(state);
-                console.log(this.state);
-              }}
-            >
-              <h4 className="list-group-item-heading">
+            <ListGroupItem key={record.id}>
+              <h4
+                className="list-group-item-heading"
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  const state = {};
+                  const key = `${record.id}_expanded`;
+                  state[key] = !!!this.state[key];
+                  this.setState(state);
+                  console.log(this.state);
+                }}
+              >
                 {record.fields.Name}
               </h4>
               {this.state[`${record.id}_expanded`] &&
@@ -83,7 +84,7 @@ export default class ResourcesList extends Component {
         style={{ marginTop: 10 }}
         id="subcategories"
       >
-        {subcategories.map(subcategory => (
+        {subcategories.map(subcategory =>
           <Tab
             eventKey={subcategory}
             title={subcategory.split("/")[1]}
@@ -91,7 +92,7 @@ export default class ResourcesList extends Component {
           >
             {this.renderServiceList(category, subcategory)}
           </Tab>
-        ))}
+        )}
       </Tabs>
     );
   }
@@ -119,11 +120,11 @@ export default class ResourcesList extends Component {
           animation={false}
           defaultActiveKey={"All"}
         >
-          {categoryNames.map(category => (
+          {categoryNames.map(category =>
             <Tab eventKey={category} title={category} key={category}>
               {this.renderSubcategories(category)}
             </Tab>
-          ))}
+          )}
         </Tabs>
       </div>
     );
