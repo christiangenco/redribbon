@@ -55,20 +55,24 @@ export default class Resource extends Component {
                   </a>
                 );
 
-              if (key.toLowerCase() === "web site")
+              if (key.toLowerCase() === "web site") {
+                let url = fields[key];
+                if (url.indexOf("http://" === -1)) url = `http://${url}`;
                 value = (
-                  <a href={"//" + fields[key]} target="_blank">
+                  <a href={url} target="_blank">
                     {fields[key]}
                   </a>
                 );
+              }
 
               if (
                 key.toLowerCase() === "phone" ||
                 key.toLowerCase() === "fax"
               ) {
-                value = fields[key].replace(
-                  /(\d{3}).*(\d{3}).*(\d{4})/,
-                  "($1) $2-$3"
+                value = (
+                  <a href={"tel:" + fields[key]}>
+                    {fields[key]}
+                  </a>
                 );
               }
 
